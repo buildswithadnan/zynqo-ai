@@ -10,8 +10,7 @@ import {
   Clock, 
   Target, 
   Brain,
-  ArrowRight,
-  Sparkles
+  ArrowRight
 } from "lucide-react";
 
 export default function LandingPage() {
@@ -23,42 +22,37 @@ export default function LandingPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-              <Sparkles className="w-4 h-4" />
               <span className="text-sm font-medium">Powered by Gemma 4</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Your AI Assistant That
+              Stop Juggling.
               <br />
               <span className="bg-gradient-to-r from-[#E5A445] to-[#EEEDFB] bg-clip-text text-transparent">
-                Actually Takes Action
+                Start Doing.
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              Stop juggling tasks, calendars, and documents. Zynqo AI learns your workflow, 
-              automates the boring stuff, and helps you focus on what matters.
+              Your personal AI assistant that doesn't just answer questions—it takes care of your tasks, 
+              manages your schedule, and automates your workflow so you can focus on what actually matters.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link 
                 href="/app"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#655BDF] rounded-lg font-semibold text-lg hover:bg-[#EEEDFB] transition-all hover:scale-105 shadow-xl"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#655BDF] rounded-lg font-semibold text-lg hover:bg-[#EEEDFB] transition-colors shadow-xl"
               >
-                Get Started
+                Try It Now
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link 
                 href="#features"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors"
               >
-                Learn More
+                See How It Works
               </Link>
             </div>
-            
-            <p className="text-xs text-white/60 pt-4">
-              * This landing page was AI-generated using Kiro IDE
-            </p>
           </div>
         </div>
       </section>
@@ -68,11 +62,10 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#292C40] mb-4">
-              Everything You Need to Stay Productive
+              Built for How You Actually Work
             </h2>
             <p className="text-lg text-[#70758B] max-w-2xl mx-auto">
-              Zynqo AI combines intelligent automation with a beautiful interface 
-              to help you accomplish more in less time.
+              No more switching between a dozen apps. Everything you need in one place.
             </p>
           </div>
 
@@ -86,8 +79,8 @@ export default function LandingPage() {
                 Task Management
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Organize, prioritize, and track your tasks with AI-powered suggestions 
-                and intelligent reminders.
+                Create tasks in seconds. Get smart reminders. See what needs doing next. 
+                No overwhelm, just progress.
               </p>
             </div>
 
@@ -100,8 +93,8 @@ export default function LandingPage() {
                 Smart Planning
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Let AI analyze your schedule and create optimal time blocks for 
-                maximum productivity.
+                Your calendar that actually helps you plan. AI suggests the best time 
+                for deep work, meetings, and breaks.
               </p>
             </div>
 
@@ -114,8 +107,8 @@ export default function LandingPage() {
                 Document Assistance
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Summarize documents, extract insights, and get answers from your 
-                files instantly.
+                Upload any document, ask questions, get instant summaries. 
+                Works with PDFs, Word docs, and more.
               </p>
             </div>
 
@@ -128,8 +121,8 @@ export default function LandingPage() {
                 Automation
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Automate repetitive workflows and let AI handle routine tasks 
-                with your permission.
+                Set it once, forget it forever. Automate the stuff you do every day. 
+                You stay in control, AI does the work.
               </p>
             </div>
           </div>
@@ -158,8 +151,8 @@ export default function LandingPage() {
                 Save Time
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Reclaim hours every week by automating routine tasks and getting 
-                instant answers to your questions.
+                Get back 5-10 hours every week. Spend less time on busywork, 
+                more time on what you actually care about.
               </p>
             </div>
 
@@ -172,8 +165,8 @@ export default function LandingPage() {
                 Stay Organized
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Keep all your tasks, documents, and schedules in one place with 
-                intelligent categorization.
+                Everything in one place. No more hunting through tabs and apps 
+                to find what you need. It's all right here.
               </p>
             </div>
 
@@ -186,8 +179,8 @@ export default function LandingPage() {
                 Work Smarter
               </h3>
               <p className="text-[#70758B] leading-relaxed">
-                Learn from AI-powered insights and personalized suggestions that 
-                adapt to your workflow.
+                The more you use it, the better it gets. Learns your patterns, 
+                suggests better ways to work, adapts to you.
               </p>
             </div>
           </div>
@@ -199,17 +192,17 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-[#655BDF] to-[#5449cf] rounded-3xl p-12 md:p-16 text-center text-white shadow-2xl">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Ready to Transform Your Workflow?
+              Ready to Take Back Your Day?
             </h2>
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of professionals using Zynqo AI to get more done 
-              with less effort. Start your journey today.
+              Stop wasting time on repetitive tasks. Let Zynqo handle the busywork 
+              while you focus on what matters.
             </p>
             <Link 
               href="/app"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-white text-[#655BDF] rounded-xl font-bold text-lg hover:bg-[#EEEDFB] transition-all hover:scale-105 shadow-xl"
+              className="inline-flex items-center gap-2 px-10 py-5 bg-white text-[#655BDF] rounded-xl font-bold text-lg hover:bg-[#EEEDFB] transition-colors shadow-xl"
             >
-              Get Started Free
+              Start Using Zynqo
               <ArrowRight className="w-6 h-6" />
             </Link>
           </div>
@@ -222,10 +215,10 @@ export default function LandingPage() {
           <div className="text-center space-y-4">
             <h3 className="text-2xl font-bold">Zynqo AI</h3>
             <p className="text-white/70">
-              Your AI Assistant That Actually Takes Action
+              The assistant that actually does stuff
             </p>
             <p className="text-white/50 text-sm">
-              Built with ❤️ using Gemma 4, Next.js, and Kiro IDE
+              Built with Gemma 4, Next.js, and Kiro IDE
             </p>
             <p className="text-white/40 text-xs pt-2">
               Hacktoberfest Hack Day Faisalabad x Himmatkaar 2026
