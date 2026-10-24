@@ -15,172 +15,207 @@ import {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#F6F7FB]">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#655BDF] to-[#5449cf] text-white">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-          <div className="text-center space-y-8">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section - Notion Navy Band */}
+      <section className="relative overflow-hidden bg-[#0a1530] text-white">
+        <div className="absolute inset-0 opacity-5">
+          {/* Decorative dots pattern */}
+          <div className="absolute top-20 left-[10%] w-3 h-3 bg-[#5645d4] rounded-full"></div>
+          <div className="absolute top-40 right-[15%] w-4 h-4 bg-[#ff64c8] rounded-full"></div>
+          <div className="absolute bottom-32 left-[20%] w-3 h-3 bg-[#2a9d99] rounded-full"></div>
+          <div className="absolute bottom-20 right-[25%] w-2 h-2 bg-[#f5d75e] rounded-full"></div>
+        </div>
+        
+        <div className="relative max-w-[1280px] mx-auto px-8 py-24 md:py-32">
+          <div className="text-center space-y-8 max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
               <span className="text-sm font-medium">Powered by Gemma 4</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Stop Juggling.
+            <h1 className="text-5xl md:text-7xl lg:text-[80px] font-semibold tracking-[-2px] leading-[1.05]">
+              Stop juggling tasks.
               <br />
-              <span className="bg-gradient-to-r from-[#E5A445] to-[#EEEDFB] bg-clip-text text-transparent">
-                Start Doing.
-              </span>
+              Start getting things done.
             </h1>
             
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              Your personal AI assistant that doesn't just answer questions—it takes care of your tasks, 
-              manages your schedule, and automates your workflow so you can focus on what actually matters.
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+              Your AI assistant that doesn't just chat—it completes tasks, organizes your schedule, 
+              and automates workflows while you focus on what matters.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link 
                 href="/app"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#655BDF] rounded-lg font-semibold text-lg hover:bg-[#EEEDFB] transition-colors shadow-xl"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#5645d4] text-white rounded-lg font-medium text-base hover:bg-[#4534b3] transition-colors shadow-lg"
               >
-                Try It Now
+                Get Zynqo free
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link 
                 href="#features"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-white/30 text-white rounded-lg font-medium text-base hover:bg-white/10 transition-colors"
               >
-                See How It Works
+                See how it works
               </Link>
+            </div>
+          </div>
+          
+          {/* Workspace Mockup Card */}
+          <div className="mt-16 max-w-5xl mx-auto">
+            <div className="bg-white rounded-xl border border-[#e5e3df] shadow-[0_24px_48px_-8px_rgba(15,15,15,0.2)] overflow-hidden">
+              <div className="p-6 border-b border-[#e5e3df]">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#e03131]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#f5d75e]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#1aae39]"></div>
+                </div>
+              </div>
+              <div className="aspect-video bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+                <div className="text-center space-y-3">
+                  <div className="text-[#37352f] text-xl font-semibold">Zynqo AI Workspace</div>
+                  <div className="text-[#787671] text-sm">Your intelligent assistant interface</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-24">
+        <div className="max-w-[1280px] mx-auto px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#292C40] mb-4">
-              Built for How You Actually Work
+            <h2 className="text-4xl md:text-5xl lg:text-[56px] font-semibold tracking-[-1px] leading-[1.10] text-[#1a1a1a] mb-4">
+              Built for real work
             </h2>
-            <p className="text-lg text-[#70758B] max-w-2xl mx-auto">
-              No more switching between a dozen apps. Everything you need in one place.
+            <p className="text-lg text-[#787671] max-w-2xl mx-auto">
+              Everything you need to manage tasks, schedule, and documents in one place.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Feature 1: Task Management */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border border-[#E8EAF2] hover:border-[#655BDF]/30">
-              <div className="w-14 h-14 bg-[#EEEDFB] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <CheckCircle2 className="w-7 h-7 text-[#655BDF]" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Feature 1: Task Management - Mint */}
+            <div className="bg-[#d9f3e1] rounded-xl p-8 border-0">
+              <div className="w-12 h-12 bg-[#1aae39] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
+                <CheckCircle2 className="w-6 h-6 text-[#1aae39]" />
               </div>
-              <h3 className="text-xl font-bold text-[#292C40] mb-3">
+              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
                 Task Management
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                Create tasks in seconds. Get smart reminders. See what needs doing next. 
-                No overwhelm, just progress.
+              <p className="text-[#37352f]/80 leading-relaxed">
+                Create tasks in seconds. Get smart reminders. No overwhelm, just progress.
               </p>
             </div>
 
-            {/* Feature 2: Smart Planning */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border border-[#E8EAF2] hover:border-[#655BDF]/30">
-              <div className="w-14 h-14 bg-[#EEEDFB] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Calendar className="w-7 h-7 text-[#655BDF]" />
+            {/* Feature 2: Smart Planning - Sky */}
+            <div className="bg-[#dcecfa] rounded-xl p-8 border-0">
+              <div className="w-12 h-12 bg-[#0075de] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
+                <Calendar className="w-6 h-6 text-[#0075de]" />
               </div>
-              <h3 className="text-xl font-bold text-[#292C40] mb-3">
+              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
                 Smart Planning
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                Your calendar that actually helps you plan. AI suggests the best time 
-                for deep work, meetings, and breaks.
+              <p className="text-[#37352f]/80 leading-relaxed">
+                AI suggests the best time for deep work, meetings, and breaks.
               </p>
             </div>
 
-            {/* Feature 3: Document Assistance */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border border-[#E8EAF2] hover:border-[#655BDF]/30">
-              <div className="w-14 h-14 bg-[#EEEDFB] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <FileText className="w-7 h-7 text-[#655BDF]" />
+            {/* Feature 3: Document Intelligence - Peach */}
+            <div className="bg-[#ffe8d4] rounded-xl p-8 border-0">
+              <div className="w-12 h-12 bg-[#dd5b00] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
+                <FileText className="w-6 h-6 text-[#dd5b00]" />
               </div>
-              <h3 className="text-xl font-bold text-[#292C40] mb-3">
-                Document Assistance
+              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
+                Document Intelligence
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                Upload any document, ask questions, get instant summaries. 
-                Works with PDFs, Word docs, and more.
+              <p className="text-[#37352f]/80 leading-relaxed">
+                Upload documents, ask questions, get instant summaries.
               </p>
             </div>
 
-            {/* Feature 4: Automation */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border border-[#E8EAF2] hover:border-[#655BDF]/30">
-              <div className="w-14 h-14 bg-[#EEEDFB] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Zap className="w-7 h-7 text-[#655BDF]" />
+            {/* Feature 4: Automation - Lavender */}
+            <div className="bg-[#e6e0f5] rounded-xl p-8 border-0">
+              <div className="w-12 h-12 bg-[#7b3ff2] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
+                <Zap className="w-6 h-6 text-[#7b3ff2]" />
               </div>
-              <h3 className="text-xl font-bold text-[#292C40] mb-3">
+              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
                 Automation
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                Set it once, forget it forever. Automate the stuff you do every day. 
-                You stay in control, AI does the work.
+              <p className="text-[#37352f]/80 leading-relaxed">
+                Set it once, forget forever. You stay in control, AI does the work.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 md:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#292C40] mb-4">
-              Why Choose Zynqo AI?
+      {/* Bold Yellow Banner */}
+      <section className="py-16 md:py-20">
+        <div className="max-w-[1280px] mx-auto px-8">
+          <div className="bg-[#f9e79f] rounded-xl p-12 md:p-16 text-center">
+            <h2 className="text-3xl md:text-5xl font-semibold text-[#37352f] mb-4">
+              Ask your AI assistant anything
             </h2>
-            <p className="text-lg text-[#70758B] max-w-2xl mx-auto">
-              Built for modern professionals who want to work smarter, not harder.
+            <p className="text-lg text-[#37352f]/80 max-w-2xl mx-auto mb-8">
+              From scheduling meetings to summarizing documents, Zynqo handles it all with Gemma 4's 
+              multimodal intelligence.
+            </p>
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-white/50 rounded-full text-sm font-medium text-[#37352f]">
+              256K context window · Native function calling · Multimodal understanding
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 md:py-24 bg-[#fafaf9]">
+        <div className="max-w-[1280px] mx-auto px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-[56px] font-semibold tracking-[-1px] leading-[1.10] text-[#1a1a1a] mb-4">
+              Why teams choose Zynqo
+            </h2>
+            <p className="text-lg text-[#787671] max-w-2xl mx-auto">
+              Built for professionals who want their tools to work as hard as they do.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
-            {/* Benefit 1: Save Time */}
-            <div className="text-center space-y-4">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#655BDF] to-[#5449cf] rounded-2xl flex items-center justify-center mx-auto">
-                <Clock className="w-10 h-10 text-white" />
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Benefit 1 */}
+            <div className="bg-white rounded-xl p-8 border border-[#e5e3df]">
+              <div className="w-14 h-14 bg-[#5645d4] bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
+                <Clock className="w-7 h-7 text-[#5645d4]" />
               </div>
-              <h3 className="text-2xl font-bold text-[#292C40]">
-                Save Time
+              <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-3">
+                Save 5-10 hours weekly
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                Get back 5-10 hours every week. Spend less time on busywork, 
-                more time on what you actually care about.
+              <p className="text-[#787671] leading-relaxed">
+                Stop doing busywork. Spend time on what you actually care about.
               </p>
             </div>
 
-            {/* Benefit 2: Stay Organized */}
-            <div className="text-center space-y-4">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#655BDF] to-[#5449cf] rounded-2xl flex items-center justify-center mx-auto">
-                <Target className="w-10 h-10 text-white" />
+            {/* Benefit 2 */}
+            <div className="bg-white rounded-xl p-8 border border-[#e5e3df]">
+              <div className="w-14 h-14 bg-[#7b3ff2] bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
+                <Target className="w-7 h-7 text-[#7b3ff2]" />
               </div>
-              <h3 className="text-2xl font-bold text-[#292C40]">
-                Stay Organized
+              <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-3">
+                Everything in one place
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                Everything in one place. No more hunting through tabs and apps 
-                to find what you need. It's all right here.
+              <p className="text-[#787671] leading-relaxed">
+                No more hunting through tabs and apps. It's all right here.
               </p>
             </div>
 
-            {/* Benefit 3: Work Smarter */}
-            <div className="text-center space-y-4">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#655BDF] to-[#5449cf] rounded-2xl flex items-center justify-center mx-auto">
-                <Brain className="w-10 h-10 text-white" />
+            {/* Benefit 3 */}
+            <div className="bg-white rounded-xl p-8 border border-[#e5e3df]">
+              <div className="w-14 h-14 bg-[#2a9d99] bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
+                <Brain className="w-7 h-7 text-[#2a9d99]" />
               </div>
-              <h3 className="text-2xl font-bold text-[#292C40]">
-                Work Smarter
+              <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-3">
+                Gets better over time
               </h3>
-              <p className="text-[#70758B] leading-relaxed">
-                The more you use it, the better it gets. Learns your patterns, 
-                suggests better ways to work, adapts to you.
+              <p className="text-[#787671] leading-relaxed">
+                Learns your patterns, suggests better workflows, adapts to you.
               </p>
             </div>
           </div>
@@ -188,39 +223,38 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-[#655BDF] to-[#5449cf] rounded-3xl p-12 md:p-16 text-center text-white shadow-2xl">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Ready to Take Back Your Day?
+      <section className="py-20 md:py-24">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="bg-[#f6f5f4] rounded-xl p-12 md:p-16 text-center">
+            <h2 className="text-3xl md:text-5xl font-semibold text-[#1a1a1a] mb-6">
+              Ready to work smarter?
             </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Stop wasting time on repetitive tasks. Let Zynqo handle the busywork 
-              while you focus on what matters.
+            <p className="text-lg text-[#787671] mb-8 max-w-2xl mx-auto">
+              Join professionals using Zynqo to get more done with less effort.
             </p>
             <Link 
               href="/app"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-white text-[#655BDF] rounded-xl font-bold text-lg hover:bg-[#EEEDFB] transition-colors shadow-xl"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#5645d4] text-white rounded-lg font-medium text-base hover:bg-[#4534b3] transition-colors shadow-lg"
             >
-              Start Using Zynqo
-              <ArrowRight className="w-6 h-6" />
+              Get started free
+              <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#292C40] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-white border-t border-[#e5e3df] py-12">
+        <div className="max-w-[1280px] mx-auto px-8">
           <div className="text-center space-y-4">
-            <h3 className="text-2xl font-bold">Zynqo AI</h3>
-            <p className="text-white/70">
+            <h3 className="text-2xl font-semibold text-[#1a1a1a]">Zynqo AI</h3>
+            <p className="text-[#787671]">
               The assistant that actually does stuff
             </p>
-            <p className="text-white/50 text-sm">
+            <p className="text-[#a4a097] text-sm">
               Built with Gemma 4, Next.js, and Kiro IDE
             </p>
-            <p className="text-white/40 text-xs pt-2">
+            <p className="text-[#bbb8b1] text-xs pt-2">
               Hacktoberfest Hack Day Faisalabad x Himmatkaar 2026
             </p>
           </div>
