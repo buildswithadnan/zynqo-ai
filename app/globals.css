@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #655BDF;
+  --primary-hover: #5449cf;
+  --primary-light: #EEEDFB;
+  --primary-dark: #272847;
+  --secondary: #6258DB;
+  --background: #F6F7FB;
+  --surface: #FFFFFF;
+  --surface-alt: #FBFBFE;
+  --border: #E8EAF2;
+  --border-subtle: #F0F1F7;
+  --text-primary: #292C40;
+  --text-secondary: #70758B;
+  --text-muted: #9DA1B2;
+  --accent: #E5A445;
+  --success: #16A34A;
+  --success-light: #EDFDF2;
+  --warning: #D97706;
+  --warning-light: #FFFBEB;
+  --danger: #E11D48;
+  --danger-light: #FFF1F2;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for clean dashboard feeds */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D7E2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A9ADC0;
+}
