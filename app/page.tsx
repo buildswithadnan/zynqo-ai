@@ -16,8 +16,8 @@ import {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Notion Navy Band */}
-      <section className="relative overflow-hidden bg-[#0a1530] text-white">
+      {/* Hero Section - Deep Gradient */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white">
         <div className="absolute inset-0 opacity-5">
           {/* Decorative dots pattern */}
           <div className="absolute top-20 left-[10%] w-3 h-3 bg-[#5645d4] rounded-full"></div>
@@ -46,14 +46,14 @@ export default function LandingPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link 
                 href="/app"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#5645d4] text-white rounded-lg font-medium text-base hover:bg-[#4534b3] transition-colors shadow-lg"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-2xl shadow-indigo-500/50 hover:scale-105"
               >
                 Get Zynqo free
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-6 h-6" strokeWidth={2.5} />
               </Link>
               <Link 
                 href="#features"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-white/30 text-white rounded-lg font-medium text-base hover:bg-white/10 transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-xl font-semibold text-lg hover:bg-white/20 hover:border-white/50 transition-all"
               >
                 See how it works
               </Link>
@@ -94,54 +94,54 @@ export default function LandingPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Feature 1: Task Management - Mint */}
-            <div className="bg-[#d9f3e1] rounded-xl p-8 border-0">
-              <div className="w-12 h-12 bg-[#1aae39] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
-                <CheckCircle2 className="w-6 h-6 text-[#1aae39]" />
+            {/* Feature 1: Task Management - Vibrant Green */}
+            <div className="bg-gradient-to-br from-emerald-50 to-green-100 rounded-xl p-8 border-0 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/30">
+                <CheckCircle2 className="w-9 h-9 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Task Management
               </h3>
-              <p className="text-[#37352f]/80 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Create tasks in seconds. Get smart reminders. No overwhelm, just progress.
               </p>
             </div>
 
-            {/* Feature 2: Smart Planning - Sky */}
-            <div className="bg-[#dcecfa] rounded-xl p-8 border-0">
-              <div className="w-12 h-12 bg-[#0075de] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
-                <Calendar className="w-6 h-6 text-[#0075de]" />
+            {/* Feature 2: Smart Planning - Bold Blue */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-8 border-0 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+                <Calendar className="w-9 h-9 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Smart Planning
               </h3>
-              <p className="text-[#37352f]/80 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 AI suggests the best time for deep work, meetings, and breaks.
               </p>
             </div>
 
-            {/* Feature 3: Document Intelligence - Peach */}
-            <div className="bg-[#ffe8d4] rounded-xl p-8 border-0">
-              <div className="w-12 h-12 bg-[#dd5b00] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
-                <FileText className="w-6 h-6 text-[#dd5b00]" />
+            {/* Feature 3: Document Intelligence - Warm Orange */}
+            <div className="bg-gradient-to-br from-orange-50 to-amber-100 rounded-xl p-8 border-0 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30">
+                <FileText className="w-9 h-9 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Document Intelligence
               </h3>
-              <p className="text-[#37352f]/80 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Upload documents, ask questions, get instant summaries.
               </p>
             </div>
 
-            {/* Feature 4: Automation - Lavender */}
-            <div className="bg-[#e6e0f5] rounded-xl p-8 border-0">
-              <div className="w-12 h-12 bg-[#7b3ff2] bg-opacity-20 rounded-lg flex items-center justify-center mb-6">
-                <Zap className="w-6 h-6 text-[#7b3ff2]" />
+            {/* Feature 4: Automation - Vibrant Purple */}
+            <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-8 border-0 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30">
+                <Zap className="w-9 h-9 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-xl font-semibold text-[#37352f] mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Automation
               </h3>
-              <p className="text-[#37352f]/80 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Set it once, forget forever. You stay in control, AI does the work.
               </p>
             </div>
@@ -149,18 +149,18 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Bold Yellow Banner */}
+      {/* Bold Gradient Banner */}
       <section className="py-16 md:py-20">
         <div className="max-w-[1280px] mx-auto px-8">
-          <div className="bg-[#f9e79f] rounded-xl p-12 md:p-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-semibold text-[#37352f] mb-4">
+          <div className="bg-gradient-to-br from-amber-400 via-orange-400 to-amber-500 rounded-2xl p-12 md:p-16 text-center shadow-2xl shadow-amber-500/30">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Ask your AI assistant anything
             </h2>
-            <p className="text-lg text-[#37352f]/80 max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-gray-800 max-w-2xl mx-auto mb-8">
               From scheduling meetings to summarizing documents, Zynqo handles it all with Gemma 4's 
               multimodal intelligence.
             </p>
-            <div className="inline-flex items-center gap-2 px-6 py-2 bg-white/50 rounded-full text-sm font-medium text-[#37352f]">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/90 backdrop-blur-sm rounded-full text-sm font-semibold text-gray-900 shadow-lg">
               256K context window · Native function calling · Multimodal understanding
             </div>
           </div>
@@ -181,40 +181,40 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Benefit 1 */}
-            <div className="bg-white rounded-xl p-8 border border-[#e5e3df]">
-              <div className="w-14 h-14 bg-[#5645d4] bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
-                <Clock className="w-7 h-7 text-[#5645d4]" />
+            <div className="bg-white rounded-xl p-10 border border-gray-200 hover:border-indigo-300 hover:shadow-xl transition-all group">
+              <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                <Clock className="w-8 h-8 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 Save 5-10 hours weekly
               </h3>
-              <p className="text-[#787671] leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 Stop doing busywork. Spend time on what you actually care about.
               </p>
             </div>
 
             {/* Benefit 2 */}
-            <div className="bg-white rounded-xl p-8 border border-[#e5e3df]">
-              <div className="w-14 h-14 bg-[#7b3ff2] bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-[#7b3ff2]" />
+            <div className="bg-white rounded-xl p-10 border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all group">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                <Target className="w-8 h-8 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 Everything in one place
               </h3>
-              <p className="text-[#787671] leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 No more hunting through tabs and apps. It's all right here.
               </p>
             </div>
 
             {/* Benefit 3 */}
-            <div className="bg-white rounded-xl p-8 border border-[#e5e3df]">
-              <div className="w-14 h-14 bg-[#2a9d99] bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
-                <Brain className="w-7 h-7 text-[#2a9d99]" />
+            <div className="bg-white rounded-xl p-10 border border-gray-200 hover:border-purple-300 hover:shadow-xl transition-all group">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+                <Brain className="w-8 h-8 text-white" strokeWidth={2.5} />
               </div>
-              <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 Gets better over time
               </h3>
-              <p className="text-[#787671] leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 Learns your patterns, suggests better workflows, adapts to you.
               </p>
             </div>
